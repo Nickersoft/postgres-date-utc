@@ -1,7 +1,7 @@
 {
   "name": "postgres-date-utc",
   "main": "index.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Postgres date column parser",
   "license": "MIT",
   "repository": "vogievetsky/postgres-date-utc",
