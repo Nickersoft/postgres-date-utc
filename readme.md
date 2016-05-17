@@ -1,4 +1,4 @@
-# postgres-date [![Build Status](https://travis-ci.org/bendrucker/postgres-date.svg?branch=master)](https://travis-ci.org/bendrucker/postgres-date)
+# postgres-date-utc
 
 > Postgres date column parser
 
@@ -24,11 +24,11 @@ parse('2011-01-23 22:15:51Z')
 
 ##### isoDate
 
-*Required*  
+*Required*
 Type: `string`
 
 A date string from Postgres.
 
 ## License
 
-MIT © [Ben Drucker](http://bendrucker.me)
+MIT

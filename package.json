@@ -1,10 +1,10 @@
 {
-  "name": "postgres-date",
+  "name": "postgres-date-utc",
   "main": "index.js",
   "version": "1.0.1",
   "description": "Postgres date column parser",
   "license": "MIT",
-  "repository": "bendrucker/postgres-date",
+  "repository": "vogievetsky/postgres-date-utc",
   "author": {
     "name": "Ben Drucker",
     "email": "bvdrucker@gmail.com",
@@ -23,8 +23,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "tape": "^4.0.0",
-    "standard": "^4.0.0"
+    "tape": "4.5.1",
+    "standard": "4.5.4"
   },
   "files": [
     "index.js",

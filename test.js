@@ -6,7 +6,7 @@ var parse = require('./')
 test('date parser', function (t) {
   t.equal(
     parse('2010-12-11 09:09:04').toString(),
-    new Date('2010-12-11 09:09:04').toString()
+    new Date('2010-12-11T09:09:04Z').toString()
   )
 
   t.equal(
@@ -28,7 +28,7 @@ test('date parser', function (t) {
 
   t.equal(
     iso('2010-12-11 09:09:04.1'),
-    new Date(2010, 11, 11, 9, 9, 4, 100).toISOString(),
+    new Date(Date.UTC(2010, 11, 11, 9, 9, 4, 100)).toISOString(),
     'no timezones'
   )
 

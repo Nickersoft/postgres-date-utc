@@ -11,7 +11,7 @@ module.exports = function parseDate (isoDate) {
   if (!matches) {
     // Force YYYY-MM-DD dates to be parsed as local time
     return DATE.test(isoDate) ?
-      new Date(isoDate + 'T00:00:00') :
+      new Date(isoDate + 'T00:00:00Z') :
       null
   }
 
@@ -35,7 +35,7 @@ module.exports = function parseDate (isoDate) {
     var utc = Date.UTC(year, month, day, hour, minute, second, ms)
     date = new Date(utc - offset)
   } else {
-    date = new Date(year, month, day, hour, minute, second, ms)
+    date = new Date(Date.UTC(year, month, day, hour, minute, second, ms))
   }
 
   if (isFirstCentury) {
